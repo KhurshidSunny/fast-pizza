@@ -2,8 +2,8 @@ import { formatCurrency } from '../../utilities/helpers';
 import Button from '../../UI/Button';
 /* eslint-disable react/prop-types */
 function MenuItem({ pizza }) {
-  const { id, name, unitPrice, ingredients, soldOut, imageUrl } = pizza;
-  console.log(id);
+  // const { id, name, unitPrice, ingredients, soldOut, imageUrl } = pizza;
+  const { name, unitPrice, ingredients, soldOut, imageUrl } = pizza;
 
   return (
     <li className="flex gap-4 py-2">
