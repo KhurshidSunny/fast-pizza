@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 import { formatCurrency } from '../../utilities/helpers';
-import UpdateItemQuantity from './updateItemQuantity';
+import UpdateItemsQuantity from './UpdateItemsQuantity';
 
 import DeleteItem from './DeleteItem';
 import { useSelector } from 'react-redux';
@@ -16,7 +16,7 @@ function CartItem({ item }) {
       </p>
       <div className="flex items-center justify-between gap-6">
         <p className="text-sm font-bold">{formatCurrency(totalPrice)}</p>
-        <UpdateItemQuantity
+        <UpdateItemsQuantity
           pizzaId={pizzaId}
           currentItemQuantity={currentItemQuantity}
         />
